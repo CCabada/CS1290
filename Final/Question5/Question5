@@ -1,19 +1,11 @@
-5 - Minimum ASCII Delete Sum for Two Strings
+5 - Maximum Length of Pair Chain
 
-Given two strings s1, s2, find the lowest ASCII sum of deleted characters to make two strings equal.
+You are given n pairs of numbers. In every pair, the first number is always smaller than the second number. 
+Now, we define a pair (c, d) can follow another pair (a, b) if and only if b < c. Chain of pairs can be formed in this fashion. 
+Given a set of pairs, find the length longest chain which can be formed. You needn't use up all the given pairs. You can select pairs in any order. 
 Example 1:
-Input: s1 = "sea", s2 = "eat"
-Output: 231
-Explanation: Deleting "s" from "sea" adds the ASCII value of "s" (115) to the sum.
-Deleting "t" from "eat" adds 116 to the sum.
-At the end, both strings are equal, and 115 + 116 = 231 is the minimum sum possible to achieve this.
-Example 2:
-Input: s1 = "delete", s2 = "leet"
-Output: 403
-Explanation: Deleting "dee" from "delete" to turn the string into "let",
-adds 100[d]+101[e]+101[e] to the sum.  Deleting "e" from "leet" adds 101[e] to the sum.
-At the end, both strings are equal to "let", and the answer is 100+101+101+101 = 403.
-If instead we turned both strings into "lee" or "eet", we would get answers of 433 or 417, which are higher.
-Note: 
-•  0 < s1.length, s2.length <= 1000. 
-•  All elements of each string will have an ASCII value in [97, 122].
+Input: [[1,2], [2,3], [3,4]]
+Output: 2
+Explanation: The longest chain is [1,2] -> [3,4]
+Note:
+1.	The number of given pairs will be in the range [1, 1000].
